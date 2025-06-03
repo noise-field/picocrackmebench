@@ -12,4 +12,3 @@ samples:
   - solution: deeppico
     sample: crackme_pass_4
     file: crackme.exe
-    
