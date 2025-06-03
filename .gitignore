@@ -195,3 +195,5 @@ cython_debug/
 .cursorindexingignore
 
 dataset/crackmesone
+**/*_ghidra/
+*.obj

@@ -11,5 +11,6 @@ dependencies = [
     "langchain-fireworks>=0.3.0",
     "langchain-openai>=0.3.18",
     "pyghidra>=2.1.0",
+    "requests>=2.32.3",
     "smolagents[toolkit]>=1.17.0",
 ]

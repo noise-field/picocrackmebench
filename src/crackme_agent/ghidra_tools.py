@@ -1,5 +1,7 @@
 """
 PyGhidra tools for reverse engineering agents
+
+Vibe-coded with Claude.
 """
 
 import json
