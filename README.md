@@ -1,0 +1,3 @@
+# PicoCrackMeBench: evaluating LLM agents' ability to solve crackmes
+
+...
