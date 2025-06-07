@@ -11,7 +11,6 @@ setup(
     author="Your Name",
     author_email="your.email@example.com",
     description="AI-powered crackme solving agent using PyGhidra and multiple LLM frameworks",
-    url="https://github.com/yourusername/pyghidra-crackme-solver",
     package_dir={"": "src"},
     packages=find_packages(where="src"),
     classifiers=[
@@ -29,6 +28,6 @@ setup(
         "langchain>=0.1.0",
         "langchain-openai",
         "langchain-community",
-        "smolagents",
+        "smolagents[toolkit]",
     ],
 )
