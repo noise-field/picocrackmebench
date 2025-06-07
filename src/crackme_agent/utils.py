@@ -9,8 +9,9 @@ from smolagents.models import OpenAIServerModel
 
 def configure_smolagents_model(config: Dict[str, Any]) -> OpenAIServerModel:
     """Configure model for smolagents"""
-    model_id = config.pop["model"]
-    return OpenAIServerModel(model_id=model_id, **config)
+    model_id = config["model"]
+    model_config = {k: v for k, v in config.items() if k != "model"}
+    return OpenAIServerModel(model_id=model_id, **model_config)
 
 
 def extract_json_result(text: str) -> Dict[str, Any]:
