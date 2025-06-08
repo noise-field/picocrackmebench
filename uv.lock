@@ -423,39 +423,6 @@ wheels = [
 ]
 
 [[package]]
-name = "crackme-project"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "dotenv" },
-    { name = "jupyter" },
-    { name = "langchain" },
-    { name = "langchain-anthropic" },
-    { name = "langchain-community" },
-    { name = "langchain-fireworks" },
-    { name = "langchain-openai" },
-    { name = "pyghidra" },
-    { name = "requests" },
-    { name = "rich" },
-    { name = "smolagents", extra = ["toolkit"] },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "dotenv", specifier = ">=0.9.9" },
-    { name = "jupyter", specifier = ">=1.1.1" },
-    { name = "langchain", specifier = ">=0.3.25" },
-    { name = "langchain-anthropic", specifier = ">=0.3.14" },
-    { name = "langchain-community", specifier = ">=0.3.24" },
-    { name = "langchain-fireworks", specifier = ">=0.3.0" },
-    { name = "langchain-openai", specifier = ">=0.3.18" },
-    { name = "pyghidra", specifier = ">=2.1.0" },
-    { name = "requests", specifier = ">=2.32.3" },
-    { name = "rich", specifier = ">=14.0.0" },
-    { name = "smolagents", extras = ["toolkit"], specifier = ">=1.17.0" },
-]
-
-[[package]]
 name = "dataclasses-json"
 version = "0.6.7"
 source = { registry = "https://pypi.org/simple" }
@@ -2433,6 +2400,47 @@ sdist = { url = "https://files.pythonhosted.org/packages/61/eb/1e5ca9859af97c894
 wheels = [
     { url = "https://files.pythonhosted.org/packages/0e/24/d0125d56d5f372a74d9753793b75b256ed8b0048856e9b93dcde69f1bacf/pyghidra-2.1.0-py3-none-any.whl", hash = "sha256:c87708f24331aaf55bc6a5b7b2b3b37165f38595348c41804bc2c57ea7d82efa", size = 42307, upload-time = "2025-04-16T10:21:56.17Z" },
 ]
+
+[[package]]
+name = "pyghidra-crackme-solver"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "dotenv" },
+    { name = "jupyter" },
+    { name = "langchain" },
+    { name = "langchain-anthropic" },
+    { name = "langchain-community" },
+    { name = "langchain-fireworks" },
+    { name = "langchain-openai" },
+    { name = "pyghidra" },
+    { name = "requests" },
+    { name = "rich" },
+    { name = "smolagents", extra = ["toolkit"] },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "pyghidra-crackme-solver" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "dotenv", specifier = ">=0.9.9" },
+    { name = "jupyter", specifier = ">=1.1.1" },
+    { name = "langchain", specifier = ">=0.3.25" },
+    { name = "langchain-anthropic", specifier = ">=0.3.14" },
+    { name = "langchain-community", specifier = ">=0.3.24" },
+    { name = "langchain-fireworks", specifier = ">=0.3.0" },
+    { name = "langchain-openai", specifier = ">=0.3.18" },
+    { name = "pyghidra", specifier = ">=2.1.0" },
+    { name = "requests", specifier = ">=2.32.3" },
+    { name = "rich", specifier = ">=14.0.0" },
+    { name = "smolagents", extras = ["toolkit"], specifier = ">=1.17.0" },
+]
+
+[package.metadata.requires-dev]
+dev = [{ name = "pyghidra-crackme-solver", virtual = "." }]
 
 [[package]]
 name = "pygments"

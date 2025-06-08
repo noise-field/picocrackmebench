@@ -17,3 +17,11 @@ dependencies = [
     "rich>=14.0.0",
     "smolagents[toolkit]>=1.17.0",
 ]
+
+[dependency-groups]
+dev = [
+    "pyghidra-crackme-solver",
+]
+
+[tool.uv.sources]
+pyghidra-crackme-solver = { workspace = true }
