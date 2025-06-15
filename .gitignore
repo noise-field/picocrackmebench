@@ -197,3 +197,7 @@ cython_debug/
 dataset/crackmesone
 **/*_ghidra/
 *.obj
+
+experiment/logs/
+experiment/json_outputs/
+experiment/results/
